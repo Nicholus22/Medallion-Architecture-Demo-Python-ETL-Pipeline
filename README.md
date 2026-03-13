@@ -1,20 +1,28 @@
-# Medallion-Architecture-Demo-Python-ETL-Pipeline
+# Medallion Architecture Demo: Python ETL Pipeline
 
-A hands-on demonstration of Medallion Architecture (Bronze → Silver → Gold layers) using Python and CSV data. This project showcases an end-to-end ETL pipeline from raw data ingestion to analytics-ready outputs.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://www.python.org/)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-Project Overview
+A hands-on demonstration of **Medallion Architecture** (Bronze → Silver → Gold layers) using Python and CSV data. This project shows an end-to-end **ETL pipeline** from raw data ingestion to analytics-ready outputs.
 
-This project simulates an e-commerce transactions dataset to demonstrate:
+---
 
-Bronze Layer: Raw ingested data (audit-ready CSV).
+## **Project Overview**
 
-Silver Layer: Cleaned and enriched dataset (duplicates removed, missing values handled, computed columns added).
+This project simulates an **e-commerce transactions dataset** to demonstrate:
 
-Gold Layer: Aggregated, analytics-ready data (e.g., total revenue per product, monthly revenue trends).
+* **Bronze Layer:** Raw ingested CSV data
+* **Silver Layer:** Cleaned & enriched dataset (duplicates removed, missing values handled, computed columns added)
+* **Gold Layer:** Aggregated analytics data (total revenue per product, monthly revenue trends)
 
-The goal is to illustrate continuous learning through practical projects, showcasing data engineering best practices and pipeline design.
+The project highlights **continuous learning through practical projects**, showcasing **data engineering best practices**.
 
-Project Structure
+---
+
+## **Project Structure**
+
+```text
 medallion-architecture-demo/
 │
 ├── bronze_transactions.csv       # Raw dataset
@@ -24,67 +32,86 @@ medallion-architecture-demo/
 ├── medallion_pipeline.ipynb      # Jupyter Notebook with full ETL workflow
 ├── README.md                     # Project documentation
 └── requirements.txt              # Python dependencies
-Features
+```
 
-Data generation for a realistic transactions dataset
+---
 
-Bronze → Silver → Gold ETL pipeline implemented in Python
+## **Features**
 
-Data cleaning, enrichment, and aggregation
+* Simulated realistic transactions dataset with `Faker`
+* Bronze → Silver → Gold ETL pipeline implemented in Python
+* Data cleaning, enrichment, and aggregation
+* Visualizations for product revenue and monthly trends
+* Optional SQLite integration for layered storage
+* Logging and row counts for pipeline auditability
 
-Visualizations for product revenue and monthly trends
+---
 
-SQLite integration for layered data storage (optional)
+## **Setup & Usage**
 
-Logging row counts for pipeline auditability
+### **Prerequisites**
 
-Getting Started
-Prerequisites
+* Python 3.8+
+* Libraries: `pandas`, `numpy`, `faker`, `matplotlib`, `seaborn`, `sqlite3` (standard library)
 
-Python 3.8+
+Install dependencies:
 
-Libraries: pandas, numpy, faker, matplotlib, seaborn, sqlite3 (standard library)
-
-Install dependencies via pip:
-
+```bash
 pip install pandas numpy faker matplotlib seaborn
-Run the Notebook
+```
 
-Clone the repository:
+### **Run the Notebook**
 
+1. Clone the repository:
+
+```bash
 git clone https://github.com/your-username/medallion-architecture-demo.git
 cd medallion-architecture-demo
+```
 
-Launch Jupyter Notebook:
+2. Launch Jupyter Notebook:
 
+```bash
 jupyter notebook
+```
 
-Open medallion_pipeline.ipynb and execute cells sequentially to see:
+3. Open `medallion_pipeline.ipynb` and run all cells to:
 
-Data generation
+   * Generate Bronze layer CSV
+   * Clean and enrich data into Silver layer
+   * Aggregate Gold layer for analytics
+   * Visualize revenue per product and monthly trends
 
-Bronze layer creation
+---
 
-Silver layer cleaning & enrichment
+## **Sample Gold Layer Visuals**
 
-Gold layer aggregation and visualizations
+**Top 5 Products by Revenue**
+![Top 5 Products](images/top5_products_placeholder.png)
 
-Key Learning Outcomes
+**Monthly Revenue Trend**
+![Monthly Revenue](images/monthly_revenue_placeholder.png)
 
-Understanding layered data architecture
+> Replace these placeholder images with your generated charts from the notebook.
 
-Hands-on ETL implementation using Python
+---
 
-Experience with data cleaning, enrichment, and aggregation
+## **Key Learning Outcomes**
 
-Visualizing insights for stakeholders
+* Implemented **layered data architecture** (Bronze → Silver → Gold)
+* Hands-on **ETL workflow in Python**
+* Data cleaning, enrichment, and aggregation techniques
+* Visualizing insights for stakeholders
 
-Future Enhancements
+---
 
-Integrate with cloud storage (Azure Data Lake / AWS S3)
+## **Future Enhancements**
 
-Use DuckDB or Spark for large-scale processing
+* Integrate with **cloud storage** (Azure Data Lake / AWS S3)
+* Use **DuckDB or Spark** for larger datasets
+* Add **automated data validation and schema checks**
+* Schedule ETL pipeline with **Airflow** or **Prefect**
 
-Add automated data validation and schema checks
 
-Deploy as a scheduled pipeline using Airflow or Prefect
+
+
