@@ -29,9 +29,9 @@ medallion-architecture-demo/
 ├── silver_transactions.csv       # Cleaned & enriched dataset
 ├── gold_product_summary.csv      # Aggregated revenue per product
 ├── gold_monthly_summary.csv      # Aggregated revenue per month
-├── medallion_pipeline.ipynb      # Jupyter Notebook with full ETL workflow
+├──ETL_process.ipynb      # Jupyter Notebook with full ETL workflow
 ├── README.md                     # Project documentation
-└── requirements.txt              # Python dependencies
+
 ```
 
 ---
@@ -75,7 +75,7 @@ cd medallion-architecture-demo
 jupyter notebook
 ```
 
-3. Open `medallion_pipeline.ipynb` and run all cells to:
+3. Open `ETL_process.ipynb` and run all cells to:
 
    * Generate Bronze layer CSV
    * Clean and enrich data into Silver layer
