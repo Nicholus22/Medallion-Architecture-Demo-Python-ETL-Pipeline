@@ -87,7 +87,7 @@ jupyter notebook
 ## **Sample Gold Layer Visuals**
 
 **Top 5 Products by Revenue**
-![alt text](Revenue.pngl)).
+![Revenue Chart](images/Revenue.png)
 
 **Monthly Revenue Trend**
 ![Monthly Revenue](images/monthly_revenue_placeholder.png)
