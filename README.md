@@ -84,13 +84,7 @@ jupyter notebook
 
 ---
 
-## **Sample Gold Layer Visuals**
 
-**Top 5 Products by Revenue**
-![Revenue Chart](images/Revenue.png)
-
-**Monthly Revenue Trend**
-![Monthly Revenue](images/monthly_revenue_placeholder.png)
 
 > Replace these placeholder images with your generated charts from the notebook.
 
